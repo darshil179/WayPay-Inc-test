@@ -9,7 +9,7 @@ class ExpenseController extends Controller
     public function index()
     {
         $expenses = Expense::all();
-        return view('expenses.index', ['expenses' => $expenses]);
+        return view('expenses.index', ['expenses' => $expenses]);               //Expense list view page
     }
 
     public function create()
